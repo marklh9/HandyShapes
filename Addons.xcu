@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data 
+ xmlns:oor="http://openoffice.org/2001/registry"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ oor:name="Addons"
+ oor:package="org.openoffice.Office"> 
+	<node oor:name="AddonUI">
+        <node oor:name="OfficeMenuBar">
+            <node oor:name="ImA.OfficeMenuBar" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                    <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                    <value>H~andyShapes</value>
+                    <value xml:lang="zh-TW">快速製圖(~A)</value>
+                </prop>
+                <node oor:name="Submenu">
+                <node oor:name="MI.CBS01" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_AQUA?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_AQUA</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS02" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_BLACK?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_BLACK</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS03" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_BLUE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_BLUE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS04" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_GREEN?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_GREEN</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS05" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_ORANGE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_ORANGE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS06" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_PURPLE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_PURPLE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.CBS07" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_RED?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_RED</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+               <node oor:name="MI.CBS01" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.CBS_AQUA?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>CBS_AQUA</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS02" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_BLACK?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_BLACK</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS03" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_BLUE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_BLUE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS04" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_GREEN?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_GREEN</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS05" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_ORANGE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_ORANGE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS06" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_PURPLE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_PURPLE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.DBFS07" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.DBFS_RED?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>DBFS_RED</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+               <node oor:name="MI.WBFS01" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_AQUA?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_AQUA</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS02" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_BLACK?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_BLACK</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS03" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_BLUE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_BLUE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS04" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_GREEN?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_GREEN</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS05" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_ORANGE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_ORANGE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS06" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_PURPLE?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_PURPLE</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                <node oor:name="MI.WBFS07" oor:op="replace">
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.drawing.DrawingDocument,com.sun.star.presentation.PresentationDocument</value>
+                    </prop>
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>vnd.sun.star.script:ImA.Rects.WBFS_RED?language=Basic&amp;location=application</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value>WBFS_RED</value>                        
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                </node>
+                </node>
+            </node>
+        </node>    
+        <node oor:name="Images">
+            <node oor:name="ImA.image.CBS.01" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_AQUA?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_AQUA16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_AQUA26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.CBS.02" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_BLACK?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_BLACK16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_BLACK26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.CBS.03" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_BLUE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_BLUE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_BLUE26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.CBS.04" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_GREEN?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_GREEN16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_GREEN26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.CBS.05" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_ORANGE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_ORANGE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_ORANGE26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.CBS.06" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_PURPLE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_PURPLE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_PURPLE26.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="ImA.image.CBS.07" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.CBS_RED?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_RED16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/CBS_RED26.png</value>
+                    </prop>
+                </node>
+            </node>               
+            <node oor:name="ImA.image.DBFS.01" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_AQUA?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_AQUA16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_AQUA26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.DBFS.02" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_BLACK?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_BLACK16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_BLACK26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.DBFS.03" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_BLUE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_BLUE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_BLUE26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.DBFS.04" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_GREEN?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_GREEN16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_GREEN26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.DBFS.05" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_ORANGE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_ORANGE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_ORANGE26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.DBFS.06" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_PURPLE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_PURPLE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_PURPLE26.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="ImA.image.DBFS.07" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.DBFS_RED?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_RED16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/DBFS_RED26.png</value>
+                    </prop>
+                </node>
+            </node>                 
+            <node oor:name="ImA.image.WBFS.01" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_AQUA?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_AQUA16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_AQUA26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.WBFS.02" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_BLACK?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_BLACK16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_BLACK26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.WBFS.03" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_BLUE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_BLUE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_BLUE26.png</value>
+                    </prop>
+                </node>
+            </node>           
+            <node oor:name="ImA.image.WBFS.04" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_GREEN?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_GREEN16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_GREEN26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.WBFS.05" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_ORANGE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_ORANGE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_ORANGE26.png</value>
+                    </prop>
+                </node>
+            </node>   
+            <node oor:name="ImA.image.WBFS.06" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_PURPLE?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_PURPLE16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_PURPLE26.png</value>
+                    </prop>
+                </node>
+            </node>
+            <node oor:name="ImA.image.WBFS.07" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                    <value>vnd.sun.star.script:ImA.Rects.WBFS_RED?language=Basic&amp;location=application</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_RED16.png</value>
+                    </prop>
+                    <prop oor:name="ImageBigURL" oor:type="xs:string">
+                        <value>%origin%/icons/WBFS_RED26.png</value>
+                    </prop>
+                </node>
+            </node>              
+        </node>		
+	</node>
+</oor:component-data>

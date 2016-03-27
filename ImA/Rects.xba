@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Rects" script:language="StarBasic">REM  *****  BASIC  *****
+
+Private Const 	THEME_BLACK = 0
+Private Const 	THEME_BLUE = 5210557
+Private Const 	THEME_RED = 12603469
+Private Const 	THEME_GREEN = 10206041
+Private Const 	THEME_PURPLE = 8414370
+Private Const 	THEME_AQUA = 4959430
+Private Const 	THEME_ORANGE = 16225862
+Private Const 	THEME_DARKER_BLACK = 0
+Private Const 	THEME_DARKER_BLUE = 3825547
+Private Const 	THEME_DARKER_RED = 9321272
+Private Const 	THEME_DARKER_GREEN = 7506497
+Private Const 	THEME_DARKER_PURPLE = 6179191
+Private Const 	THEME_DARKER_AQUA = 3637138
+Private Const 	THEME_DARKER_ORANGE = 11955763
+
+Sub CBS_BLACK()
+	CBS(THEME_BLACK)
+End Sub
+
+Sub CBS_BLUE()
+	CBS(THEME_BLUE)
+End Sub
+
+Sub CBS_RED()
+	CBS(THEME_RED)
+End Sub
+
+Sub CBS_GREEN()
+	CBS(THEME_GREEN)
+End Sub
+
+Sub CBS_PURPLE()
+	CBS(THEME_PURPLE)
+End Sub
+
+Sub CBS_AQUA()
+	CBS(THEME_AQUA)
+End Sub
+
+Sub CBS_ORANGE()
+	CBS(THEME_ORANGE)
+End Sub
+
+Sub DBFS_BLACK()
+	DBFS(THEME_BLACK,THEME_DARKER_BLACK)
+End Sub
+
+Sub DBFS_BLUE()
+	DBFS(THEME_BLUE,THEME_DARKER_BLUE)
+End Sub
+
+Sub DBFS_RED()
+	DBFS(THEME_RED,THEME_DARKER_RED)
+End Sub
+
+Sub DBFS_GREEN()
+	DBFS(THEME_GREEN,THEME_DARKER_GREEN)
+End Sub
+
+Sub DBFS_PURPLE()
+	DBFS(THEME_PURPLE,THEME_DARKER_PURPLE)
+End Sub
+
+Sub DBFS_AQUA()
+	DBFS(THEME_AQUA,THEME_DARKER_AQUA)
+End Sub
+
+Sub DBFS_ORANGE()
+	DBFS(THEME_ORANGE,THEME_DARKER_ORANGE)
+End Sub
+
+Sub WBFS_BLACK()
+	WBFS(THEME_BLACK)
+End Sub
+
+Sub WBFS_BLUE()
+	WBFS(THEME_BLUE)
+End Sub
+
+Sub WBFS_RED()
+	WBFS(THEME_RED)
+End Sub
+
+Sub WBFS_GREEN()
+	WBFS(THEME_GREEN)
+End Sub
+
+Sub WBFS_PURPLE()
+	WBFS(THEME_PURPLE)
+End Sub
+
+Sub WBFS_AQUA()
+	WBFS(THEME_AQUA)
+End Sub
+
+Sub WBFS_ORANGE()
+	WBFS(THEME_ORANGE)
+End Sub
+
+
+Sub ShowRGB(Name As String, Color1 As Long, Color2 As Long)
+
+	Msgbox Name + &quot;(&quot;+ Red(Color1) + &quot;,&quot; + Green(Color1) + &quot;,&quot; + Blue(Color1) + &quot;)&quot;
+	Msgbox &quot;Darker &quot; + Name + &quot;(&quot;+ Red(Color2) + &quot;,&quot; + Green(Color2) + &quot;,&quot; + Blue(Color2) + &quot;)&quot;
+	
+End Sub
+
+Sub testColors
+ShowRGB(&quot;BLACK&quot;,THEME_BLACK,THEME_DARKER_BLACK)  
+ShowRGB(&quot;BLUE&quot;,THEME_BLUE,THEME_DARKER_BLUE)
+ShowRGB(&quot;RED&quot;,THEME_RED,THEME_DARKER_RED)
+ShowRGB(&quot;GREEN&quot;,THEME_GREEN,THEME_DARKER_GREEN)
+ShowRGB(&quot;PURPLE&quot;,THEME_PURPLE,THEME_DARKER_PURPLE)
+ShowRGB(&quot;AQUA&quot;,THEME_AQUA,THEME_DARKER_AQUA)
+ShowRGB(&quot;ORANGE&quot;,THEME_ORANGE,THEME_DARKER_ORANGE)
+End Sub
+
+Sub testAll()
+
+CBS(THEME_BLACK)
+CBS(THEME_BLUE)
+CBS(THEME_RED)
+CBS(THEME_GREEN)
+CBS(THEME_PURPLE)
+CBS(THEME_AQUA)
+CBS(THEME_ORANGE)  
+ 
+    
+DBFS(THEME_BLACK,THEME_DARKER_BLACK)  
+DBFS(THEME_BLUE,THEME_DARKER_BLUE)
+DBFS(THEME_RED,THEME_DARKER_RED)
+DBFS(THEME_GREEN,THEME_DARKER_GREEN)
+DBFS(THEME_PURPLE,THEME_DARKER_PURPLE)
+DBFS(THEME_AQUA,THEME_DARKER_AQUA)
+DBFS(THEME_ORANGE,THEME_DARKER_ORANGE)   
+
+  
+WBFS(THEME_BLACK)  
+WBFS(THEME_BLUE)
+WBFS(THEME_RED)
+WBFS(THEME_GREEN)
+WBFS(THEME_PURPLE)
+WBFS(THEME_AQUA)
+WBFS(THEME_ORANGE)   
+  
+GS(13684944,15592941,THEME_BLACK)
+GS(12571902,15069183,THEME_BLUE)
+GS(16761278,16770533,THEME_RED)
+GS(14941122,16056294,THEME_GREEM)
+GS(14273262,15854328,THEME_PURPLE)
+GS(12578047,15136767,THEME_AQUA) 
+GS(16768720,16773612,THEME_ORANGE) 
+
+End Sub
+
+Sub CBS(LineColor As Long)
+  Dim oCurrentSelection As Object
+  Dim oShape As Object
+  if Not IsDrawOrImpress() then
+  	Exit Sub
+  End if  
+  oCurrentSelection = ThisComponent.getCurrentSelection()
+  if IsNull(oCurrentSelection) or IsEmpty(oCurrentSelection) Then
+    oShape = DefaultShape()
+    SetColorBorderShape(oShape,LineColor)
+  	drawShape(oShape)
+  else
+  	For i = 0 to oCurrentSelection.Count-1
+		oShape = oCurrentSelection.getByIndex(i)
+		SetColorBorderShape(oShape,LineColor)
+	Next i	
+  end if
+End Sub
+
+Sub SetColorBorderShape(oShape As Object,LineColor As Long)
+  oShape.Shadow = False  
+  oShape.FillBackground = True
+  oShape.FillColor = RGB(255,255,255)
+  oShape.CharColor = RGB(0,0,0)
+  oShape.LineWidth = 71
+  oShape.LineColor = LineColor
+End Sub
+
+Sub DBFS(FillColor As Long,LineColor As Long)
+  Dim oCurrentSelection As Object
+  Dim oShape As Object
+  if Not IsDrawOrImpress() then
+  	Exit Sub
+  End if  
+  oCurrentSelection = ThisComponent.getCurrentSelection()
+  if IsNull(oCurrentSelection) or IsEmpty(oCurrentSelection) Then
+    oShape = DefaultShape()
+    SetDarkerBorderFilledShape(oShape,FillColor,LineColor)
+  	drawShape(oShape)
+  else
+  	For i = 0 to oCurrentSelection.Count-1
+		oShape = oCurrentSelection.getByIndex(i)
+		SetDarkerBorderFilledShape(oShape,FillColor,LineColor)
+	Next i	
+  end if
+End Sub
+
+Sub SetDarkerBorderFilledShape(oShape As Object,FillColor As Long,LineColor As Long)
+  oShape.Shadow = False  
+  oShape.FillBackground = True
+  oShape.FillColor = FillColor
+  oShape.LineWidth = 71
+  oShape.LineColor = LineColor
+  oShape.CharColor = RGB(255,255,255)  
+End Sub
+
+Sub WBFS(FillColor As Long)
+  Dim oCurrentSelection As Object
+  Dim oShape As Object
+  if Not IsDrawOrImpress() then
+  	Exit Sub
+  End if  
+  oCurrentSelection = ThisComponent.getCurrentSelection()
+  if IsNull(oCurrentSelection) or IsEmpty(oCurrentSelection) Then
+    oShape = DefaultShape()
+    SetWhiteBorderFilledShape(oShape,FillColor)
+  	drawShape(oShape)
+  else
+  	For i = 0 to oCurrentSelection.Count-1
+		oShape = oCurrentSelection.getByIndex(i)
+		SetWhiteBorderFilledShape(oShape,FillColor)
+	Next i	
+  end if
+End Sub
+
+Sub SetWhiteBorderFilledShape(oShape As Object,FillColor As Long)
+  oShape.Shadow = True
+  oShape.ShadowTransparence  = 62
+  oShape.ShadowXDistance = 0
+  oShape.ShadowYDistance = 56    
+  oShape.FillBackground = True
+  oShape.FillColor = FillColor
+  oShape.LineWidth = 106
+  oShape.LineColor = RGB(255,255,255)
+  oShape.CharColor = RGB(255,255,255)  
+End Sub
+
+Sub GS(StartColor As Long,EndColor As Long,LineColor As Long)
+  Dim oCurrentSelection As Object
+  Dim oShape As Object
+  if Not IsDrawOrImpress() then
+  	Exit Sub
+  End if  
+  oCurrentSelection = ThisComponent.getCurrentSelection()
+  if IsNull(oCurrentSelection) or IsEmpty(oCurrentSelection) Then
+    oShape = DefaultShape()
+    SetGradientShape(oShape,StartColor,EndColor,LineColor)
+  	drawShape(oShape)
+  else
+  	For i = 0 to oCurrentSelection.Count-1
+		oShape = oCurrentSelection.getByIndex(i)
+		SetGradientShape(oShape,StartColor,EndColor,LineColor)
+	Next i	
+  end if
+End Sub
+
+Sub SetGradientShape(oShape As Object,StartColor As Long,EndColor As Long,LineColor As Long)
+  oShape.Shadow = True
+  oShape.ShadowTransparence  = 62
+  oShape.ShadowXDistance = 0
+  oShape.ShadowYDistance = 56    
+  oShape.FillBackground = True
+  oShape.FillTransparence  = 0
+  oShape.FillStyle = com.sun.star.drawing.FillStyle.GRADIENT
+  oShape.CharColor = RGB(0,0,0)
+  oShape.LineWidth = 26
+  oShape.LineColor = LineColor
+  oShape.FillGradient = CreateGradient(StartColor,EndColor)
+End Sub
+
+Function CreateGradient(StartColor As Long,EndColor As Long) As com.sun.star.awt.Gradient
+  DIM oGradient As New com.sun.star.awt.Gradient
+
+  oGradient.Angle = 1800
+  oGradient.Border = 0
+  oGradient.EndColor = EndColor
+  oGradient.EndIntensity = 100      
+  oGradient.StartColor = StartColor
+  oGradient.StartIntensity = 100      
+  oGradient.StepCount = 0
+  oGradient.Style = com.sun.star.awt.GradientStyle.LINEAR   
+  oGradient.XOffset = 0        
+  oGradient.YOffset = 0 
+  CreateGradient = oGradient
+End Function
+
+Sub	drawShape(oShape as Variant)
+  Dim oPage  &apos;Page on which to draw  
+    
+  Dim oCurrentController As Variant
+  if Not IsDrawOrImpress() then
+  	Exit Sub
+  End if
+
+  oCurrentController = ThisComponent.getCurrentController()
+  oPage = oCurrentController.getCurrentPage()  
+  oPage.add(oShape)
+End Sub
+
+Function DefaultShape()
+  Dim oShape &apos;Shape to insert
+  oShape = ThisComponent.createInstance(&quot;com.sun.star.drawing.RectangleShape&quot;)
+  oShape.setPosition(createPoint(1000, 1000))
+  oShape.setSize(createSize(4000, 1000))
+  oShape.setString(&quot;box 1&quot;)
+  DefaultShape = oShape
+End Function
+
+Function IsDrawOrImpress()
+  sDrawDoc$ = &quot;com.sun.star.drawing.DrawingDocument&quot;
+  sImpressDoc$ = &quot;com.sun.star.presentation.PresentationDocument&quot;
+
+  If ThisComponent.SupportsService(sDrawDoc$ ) Or ThisComponent.SupportsService(sImpressDoc$) Then
+	IsDrawOrImpress = True
+  else
+	IsDrawOrImpress = False
+  End If  	
+End Function
+
+Function CreatePoint(ByVal x As Long,ByVal y As Long) As com.sun.star.awt.Point
+  Dim oPoint
+  oPoint = createUnoStruct( &quot;com.sun.star.awt.Point&quot; )
+  oPoint.X = x : oPoint.Y = y
+  CreatePoint = oPoint
+End Function
+
+Function CreateSize(ByVal x As Long,ByVal y As Long) As com.sun.star.awt.Size
+  Dim oSize
+  oSize = createUnoStruct( &quot;com.sun.star.awt.Size&quot; )
+  oSize.Width = x : oSize.Height = y
+  CreateSize = oSize
+End Function
+
+</script:module>
